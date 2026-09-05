@@ -1,6 +1,6 @@
 # untis
 
-Two small tools built on top of [python-webuntis](https://python-webuntis.readthedocs.io/) for probing and dumping data from a WebUntis school-timetable account.
+Two small tools built on top of testing data from WebUntis
 
 - **`main.py`** — logs in with the configured account and prints/exports all WebUntis data it can currently access (timetables, classes, teachers, rooms, subjects).
 - **`test_permissions.py`** — walks every public endpoint exposed by the installed `python-webuntis` version and writes a JSON report of what succeeds, what fails with a permission error, and what fails for other reasons — useful for figuring out exactly what a given account is allowed to see.
@@ -30,4 +30,4 @@ python main.py
 python test_permissions.py
 ```
 
-Both scripts write their own JSON output locally; neither file is committed since the content is account-specific.
+Both scripts write their own JSON output locally
